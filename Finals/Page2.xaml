@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Finals.Page2">
+    <ContentPage.Content>
+        <ScrollView HeightRequest="3000" Margin="0,0,0,0" BackgroundColor="#88e0d6">
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Image x:Name="imageMiss"
+                       Source="Hangman0.png"
+                       HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="FillAndExpand"
+                       Aspect="AspectFill"
+                       Grid.ColumnSpan="2"
+                       Margin="0,0,0,0"/>
+                <StackLayout 
+                    x:Name="WordArea"
+                    Grid.ColumnSpan="2"
+                    Orientation="Horizontal"
+                    BackgroundColor="#e9c46a"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,150,0,30"/>
+                <StackLayout 
+                    x:Name="firstRow"
+                    Grid.ColumnSpan="2"         
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,260,0,20"/>
+                <StackLayout 
+                    x:Name="secondRow"
+                    Grid.ColumnSpan="2"
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,340,0,10"/>
+                <StackLayout 
+                    x:Name="thirdRow"
+                    Grid.ColumnSpan="2"
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,430,0,10"/>
+
+                <Button 
+                    Text="New Game"
+                    FontSize="20"
+                    Grid.ColumnSpan="2"
+                    TextColor="White"
+                    BackgroundColor="#ef476f"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,530,0,0"
+                    CornerRadius="22"
+                    Clicked="Btn_Clicked_NewGame"/>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

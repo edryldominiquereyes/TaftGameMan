@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Finals.Page3">
+    <ContentPage.Content>
+        <ScrollView HeightRequest="3000" Margin="0,0,0,0" BackgroundColor="#88e0d6">
+            <StackLayout>
+                <Grid Margin="0,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Image Source="About.png"
+                       HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="FillAndExpand"
+                       Aspect="AspectFill"
+                       Grid.ColumnSpan="2"
+                       Margin="0,0,0,0"/>
+
+                    <Label Text="About"
+                           TextColor="PaleVioletRed" 
+                           LineBreakMode="WordWrap"
+                           Grid.ColumnSpan="2"
+                           FontSize="40"
+                           FontFamily="font3"
+                           Margin="0, 200, 0, 0"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"/>
+
+                    <Label Text="The Taft Game is by aa. It is designed and programmed by Edryl Dominique Reyes and Johntrix Trinidad. The inspiration for this application is the classic game Hangman. Instead of using random words The Taft Game is using words and phrases in the context of Taft culture ads well as the design inspiration."
+                           TextColor="Black" 
+                           LineBreakMode="WordWrap"
+                           Grid.ColumnSpan="2"
+                           FontSize="Body"
+                           FontFamily="font1"
+                           Margin="30, 250, 30, 0"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

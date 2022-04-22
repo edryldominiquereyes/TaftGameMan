@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Hangman="clr-namespace:Finals"
+            x:Class="Finals.TabbedPage1"
+            BarBackgroundColor="#e9c46a">
+  <!--Pages can be added as references or inline-->
+    <Hangman:Page1 Title="HOME"></Hangman:Page1>
+    <Hangman:Page2 Title="THE TAFT GAME"></Hangman:Page2>
+    <Hangman:Page3 Title="ABOUT"></Hangman:Page3>
+</TabbedPage>
